@@ -1,4 +1,8 @@
+
 # Playwright POM Test Framework for SauceDemo
+
+![Playwright Tests](https://github.com/trafik255/playwright-saucedemo-pom/actions/workflows/playwright.yml/badge.svg)
+
 
 This project uses [Microsoft Playwright](https://playwright.dev/python/) and Pytest to automate end-to-end UI testing of [SauceDemo](https://www.saucedemo.com), a sample e-commerce site for automation practice. It is structured using the Page Object Model (POM) design pattern.
 
