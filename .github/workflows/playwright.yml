@@ -22,7 +22,13 @@ jobs:
           pip install -r requirements.txt
           playwright install
 
-      - name: Run tests
+      - name: Run tests and generate HTML report
         run: |
           source .venv/bin/activate
-          pytest
+          pytest --html=playwright-report/report.html --self-contained-html
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: playwright-report/report.html
