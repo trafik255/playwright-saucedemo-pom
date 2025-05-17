@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+.env
+.venv/
+*.sqlite3
+
+# PyCharm
+.idea/
+*.iml
+
+# Playwright outputs
+test-results/
+playwright-report/
